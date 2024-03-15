@@ -14,6 +14,9 @@ app.get('/twitter',(req,res)=>{
 app.get('/login',(req,res)=>{
     res.send("<h1> Login Page</h1>")
 })
+app.get('/json',(req,res)=>{
+    res.json({name:"yogesh"})
+})
 
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
